@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - E-learning Application</title>
+  <link rel="stylesheet" href="Contact-usStyles.css">
+</head>
+<body>
+  <header>
+    <h1>Contact Us</h1>
+    <nav>
+     <h2><a href="E-Learning-Application-Home.html">Home</a></h2>
+    </nav>
+
+  </header>
+
+  <main>
+    <section id="contact-form">
+      <h2>We’d love to hear from you!</h2>
+      <form onsubmit="handleSubmit(event)">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="subject">Subject</label>
+        <input type="text" id="subject" name="subject" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit">Submit</button>
+      </form>
+      
+      <!-- Response message will appear here -->
+      <div id="response-message" style="display: none;"></div>
+    </section>
+  </main>
+
+  <script src="contact-usScript.js"></script>
+</body>
+</html>

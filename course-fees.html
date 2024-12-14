@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Dashboard - Course Fees</title>
+  <link rel="stylesheet" href="courseFeesStyles.css">
+</head>
+<body>
+  <header>
+    <h1>Student Dashboard</h1>
+    <nav>
+      <a href="student-dashboard.html">Dashboard</a>
+        <a href="enroll-courses.html">Enroll Courses</a>
+      <a href="E-Learning-Application-Home.html">Home</a>
+       <a href="contact-us.html">Contact Us</a>
+    </nav>
+  </header>
+
+   <main>
+    <section id="available-courses">
+      <h2>Select Courses to View Fees</h2>
+      <div id="course-selection">
+        <!-- Courses with checkboxes will be loaded here -->
+      </div>
+      <button onclick="calculateSelectedFees()">Calculate Selected Fees</button>
+    </section>
+
+    <section id="selected-course-fees">
+      <h2>Selected Courses and Fees</h2>
+      <div id="selected-fee-list">
+        <!-- Selected courses and their fees will be displayed here -->
+      </div>
+      <div id="total-selected-fee">
+        <strong>Total Selected Fee:</strong> <span id="selected-total-amount">$0</span>
+      </div>
+    </section>
+  </main>
+
+  <script src="course-fees.js"></script>
+</body>
+</html>

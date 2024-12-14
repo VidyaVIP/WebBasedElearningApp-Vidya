@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - Manage Students</title>
+    <link rel="stylesheet" href="admin-manageStudent-styles.css">
+</head>
+<body>
+    <header>
+        <h1>Admin Dashboard</h1>
+        <nav>
+            <a href="admin-dashboard.html">Dashboard</a>
+            <a href="E-Learning-Application-Home.html">Home</a>
+            <a href="contact-us.html">Contact Us</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="manage-students">
+            <h2>Manage Student Records</h2>
+            <form id="student-form" onsubmit="addStudent(event)">
+                <label for="student-name">Student Name:</label>
+                <input type="text" id="student-name" required>
+
+                <label for="student-email">Email:</label>
+                <input type="email" id="student-email" required>
+
+                <label for="student-course">Course:</label>
+                <input type="text" id="student-course" required>
+
+                <button type="submit">Add Student</button>
+            </form>
+
+            <table id="student-table">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Course</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="student-list"></tbody>
+            </table>
+        </section>
+    </main>
+
+    <script src="admin-manageScript.js"></script>
+</body>
+</html>

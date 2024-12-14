@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Student Dashboard</h1>
+    <nav>
+      <a href="student-dashboard.html">Dashboard</a>
+      <a href="enroll-courses.html"> Enroll Courses</a>
+      <a href="E-Learning-Application-Home.html">Home</a>
+      <a href="discussion.html"> Discussion Forum</a>
+      <a href="course-fees.html">Course Fees</a>
+      <a href="contact-us.html">Contact Us</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="course-list">
+      <h2>Available Courses</h2>
+      <div class="course-card">
+        <h3>Introduction to Programming</h3>
+        <button onclick="viewCourse('Programming.html')">View Course</button>
+      </div>
+      <div class="course-card">
+        <h3>Data Structures</h3>
+        <button onclick="viewCourse('dataStructure.html')">View Course</button>
+      </div>
+       <div class="course-card">
+        <h3>Web Development</h3>
+        <button onclick="viewCourse('Web-Development.html')">View Course</button>
+      </div>
+ <div class="course-card">
+        <h3>Machine Learning Basics</h3>
+        <button onclick="viewCourse('machine-learning.html')">View Course</button>
+      </div>
+
+
+    </section>
+  </main>
+
+  <script>
+    function viewCourse(page) {
+      window.location.href = page;
+    }
+  </script>
+</body>
+</html>
